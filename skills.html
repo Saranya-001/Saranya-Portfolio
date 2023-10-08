@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Glassmorphism Skills Bar</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    
+</head>
+<body>
+    
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="skills.html">Skill</a></li>
+                    <li><a href="contact.html">Connect</a></li>
+                </ul>
+            </div>
+        
+        </nav>
+    <div class="wrapper">
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="container">
+            <h2>MY CODING SKILLS</h2>
+            <div class="skills">
+                <div class="details">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="bar">
+                    <div id="html-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>CSS</span>
+                    <span>90%</span>
+                </div>
+                <div class="bar">
+                    <div id="css-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Javascript</span>
+                    <span>70%</span>
+                </div>
+                <div class="bar">
+                    <div id="js-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Python</span>
+                    <span>65%</span>
+                </div>
+                <div class="bar">
+                    <div id="python-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>MySQL</span>
+                    <span>65%</span>
+                </div>
+                <div class="bar">
+                    <div id="mysql-bar"></div>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="details">
+                    <span>Figma</span>
+                    <span>90%</span>
+                </div>
+                <div class="bar">
+                    <div id="figma-bar"></div>
+                </div>
+            </div>
+        </div>
+    
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+body{
+    background-color: #393333;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.nav-links{
+    text-align: right;
+    background: #a53781;
+    padding: 13px 40px;
+    border-bottom-left-radius: 18px;
+    margin-top: 1%;
+    margin-left: 59.4%;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-style: normal;
+    
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+.nav-links ul li a:hover{
+    color: #000;
+}
+.wrapper{
+    width: 20%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    margin-top: 30px;
+}
+.container{
+    width: 100%;
+    padding: 30px 30px;
+    background-color: rgba(255,255,255,0.06);
+    border-radius: 10px;
+}
+.container *{
+    font-family: "Poppins",sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+}
+h2{
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 7px 10px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #badefc;
+    border: 1px solid #931088;
+    box-shadow: 0 0 5px rgba(255, 17, 180, 0.6);
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 90%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 70%;
+    }
+}
+#python-bar{
+    animation: python-fill 2s forwards;
+}
+@keyframes python-fill{
+    100%{
+        width: 65%;
+    }
+}
+#mysql-bar{
+    animation: mysql-fill 2s forwards;
+}
+@keyframes mysql-fill{
+    100%{
+        width: 65%;
+    }
+}
+#figma-bar{
+    animation: figma-fill 2s forwards;
+}
+@keyframes figma-fill{
+    100%{
+        width: 90%;
+    }
+}
+    </style>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Page</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills.html">Skill</a></li>
+                <li><a href="contact.html">Connect</a></li>
+            </ul>
+        </div>
+    
+    </nav>
+    <div class="container">
+        <main class="row">
+            <section class="col">
+                <header class="title">
+                    <h2>EDUCATION</h2>
+                </header>
+                <div class="contents">
+                <div class="box">
+                    <h4>2019 - 2023</h4>
+                    <h3>Bachelor's Degree</h3>
+                    <p>B.TECH - Information Technology <br> Sathyabama Institute of Science and Technology <br> CGPA - 8.6 <br> OMR, Chennai - 600119.</p>
+                </div>
+                <div class="box">
+                <h4>2018 - 2019</h4>
+                <h3>High School Degree</h3>
+                <p>Indo American Matric Higher Secondary School <br> Percentage - 57% <br> Tiruvannamalai District, Cheyyar - 604407.</p>
+                </div>
+                <div class="box">
+                    <h4>2016 - 2017</h4>
+                    <h3>Secondary School Degree</h3>
+                    <p>Indo American Matric Higher Secondary School <br> Percentage - 88.8% <br> Tiruvannamalai District, Cheyyar - 604407.</p>
+                </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+
+    nav{
+        
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        
+    }
+    .nav-links{
+        text-align: right;
+        background: #a53781;
+        padding: 15px 40px;
+        border-bottom-left-radius: 18px;
+        margin-top: 1%;
+        margin-left: 59%;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px 25px;
+        font-style: normal;
+    }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        
+    }
+    .nav-links ul li a:hover{
+        color: #000;
+    }
+    body{
+        background-color: #393333;
+    }
+    .container{
+        width: 100%;
+        padding: 25px 20%;
+        
+    }
+    main.row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40%;          
+    }
+    .container .row .col .title h2{
+        font-family: helvetica;
+        color: #fffafe;
+        padding: 0px 0px 20px 30px;
+        margin-bottom: 40px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-left: -40px;
+        font-weight: bold;
+        font-size: 200%;
+    }
+    
+    .col .contents .box{
+        position: relative;
+        padding: 20px;
+        border: 2px solid #854f70;
+        background: linear-gradient(to bottom, #ffccf8 0%, #cc99ff 100%);
+        cursor: pointer;
+        transition: all 0.4s;    
+        margin: 30px;
+        align-items: center;
+        width: 170%;
+        height: 100%;
+        margin-left: -40%;
+        margin-top:-20px;
+    }
+    .col .contents .box h4{
+        color: #d259aa;
+    }
+    .col .contents .box:hover{
+        box-shadow: 0px 3px 12px 0px #9f5f9f;
+        border: 1px solid transparent;
+    }
+    
+    .box h4{
+        position: relative;
+        color: #fff1fc;
+    }
+    .box h3{
+        font-size: 19px;
+        padding: 10px 0 6px;
+        font-family: helvetica;
+        color: #444040;
+    }
+    .box p{
+        line-height: 1.2;
+        color: #303030;
+        font-size: 17px;
+    }
+
+</style>
+</html>
